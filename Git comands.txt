@@ -1,0 +1,91 @@
+1. git add . [it will add files. and this action will be done at the very begining. without add we cannot update filess]
+
+2. git status [it will show files that are commited]
+
+3. git log   [ shows the auther and email account]
+
+4. git commit -m "add files first.txt and second.txt" [the statement inbetween the commas should be a meaningfull message to be committed]
+
+5. git reset [it will remove file from stagging area] 
+
+6. git reset --hard [it will remove file from stagging area and also remove changes in the file]
+
+7. NOTE:To make .gitignore file first go to the project folder then right click and select option in option select git bash and write $ touch .gitignore
+
+8. git branch [shows list of branches]
+
+9. git branch -v [Show list of branches with some details. i.e last commit details]
+
+10. git branch new-dev [Creats new branch with name 'new-dev']
+
+11. git checkout new-dev [Switch to 'new-dev' branch]
+
+12. git merge new-dew [Merge 'new-dev' branch into current active branch]
+
+13. git log new-dev..master  [Show commit difference in to two branches]
+
+14. git log dev..master [want to see difference between commits of two branches]
+
+15. git log master..dev [want to see difference between commits of two branches]
+
+16. git checkout master [it will enter back to the master branch]
+
+17. git merge dev [it will merge the dev branch into the master branch]
+
+18. git stash [saves local changes stash clipboard]
+
+19. git stash save <name>   [save local changes in stash clipboard with the name provided into the command]
+
+20. git stash list    [show list of stashes]
+
+21. git stash pop    [apply latest stash and remove it from clipboard]
+
+22. git stash apply stashname   [apply specific stash and that stash will remain saved in clipboard]
+
+23. git push [push changes to remote repositories]
+
+24. git fetch [fetch changes from remote repositories]
+
+25. git merge [merge changes that was fetch by 'git fitch' command]
+
+26. git pull [fetch and merge changes from remote repositories]
+
+27. git remote -v  [show remote urls and also shows repository that is connected to the local repository]
+
+28. git remote show origin  [show details of repository named origin]
+
+29. git remote add repositoryname & url   [this command will add remote repository in local repository]
+
+30. git remote add origin <link>   [if we have local repository and we want to add it as a remote repopsitory on github]
+
+31. git push -u origin master [first time we push the code from local to remote repository namely orogin and branch master]
+
+NOTE: The "-u" flag establishes a tracking connection between remote and our local repositories.
+
+32. git push 'remote' 'branch'   i.e. git push origin master   [as we have origin as a remote repo and master is a branch]
+
+33. git log [shows log for current branch]
+
+34. git log remote/branch    i.e. git log origin/master  [as we have origin as a remote repo and master is a branch]
+
+publish a local Branch  to remote repository
+
+35. git branch work   [this will  create new branch work on local repo]
+
+36. git checkout work [switch to work branch]
+
+37. git push -u origin work   [makes changes in origin repository and work branch]
+
+GIT WORK FLOW
+
+38. git branch -d contact-form  [ to delete a branch named contact-form]
+
+39. git branch -dr origin/contact-form   [to delete a branch n remote repository from the machine but it will still exits on github]
+
+40. git push origin --delete dev   [ it will permanantely delete the branch]
+41. git checkout HEAD <file/to/restore>   [Discard changes in single file]
+42. git revert <commitHash>   [it does not remove actual commit instead it creates another commit that revert each of the changes in the unwanted commit]
+43. git reset --hard <commitHash]> [it works by resetting by cuurent head branch to an older version also called rolling back to the older version]
+44. git reset --keep  [can be used instead of --hard all chnages from rolled back revisions will be reserved as local changes in your working directory]
+45. git push -f origin master  [-f represent forcefull push to remote repository after doing reset --hard command]
+46. 
